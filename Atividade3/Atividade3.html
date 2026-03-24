@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 3</title>
+    <link rel="stylesheet" href="Atividade3.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <article>
+                <strong>
+                    <header> Introdução </header>
+                </strong>
+                <br>
+                <p>
+                    Devido à complexidade dos sistemas de software, surgiu a necessidade de se separar sistemas em
+                    subsistemas,
+                    chamados “módulos” para facilitar a organização e o desenvolvimento.
+                    Projetar uma arquitetura de software consiste, então, em identificar esses subsistemas, estabelecer
+                    relações entre eles,
+                    bem como definir um arcabouço que estabeleça o controle e a comunicação entre tais subsistemas
+                    (Sommerville, 2008).
+                </p>
+            </article>
+
+            <article>
+                <strong>
+                    <header>Tipos de Arquitetura de Software</header>
+                </strong>
+                <p>
+                    <ol>
+                        <li>
+                            Monolítica<br>
+                                &emsp;Consiste na organização do código em um
+                                único bloco físico, sem a utilização de módulos.<br>
+
+                                Em camadas (Layered)<br>
+                                &emsp;Consiste na separação do código em módulos
+                                com função específica e se comunicam somente com o
+                                módulo logo abaixo dele na hierarquia.
+                        </li>
+
+                        <br>
+
+                        <li>
+                            Microsserviços<br>
+                                &emsp;Separação do software em vários softwares
+                                pequenos e independentes, chamados “microsserviços”.
+                                Cada microsserviço é responsável por uma função
+                                específica e pode ser desenvolvido, modificado,
+                                escalado e implantado de maneira independente dos outros.
+                        </li>
+
+                        <br>
+
+                        <li>
+                            Orientada a Serviços<br>
+                                &emsp;Similar à arquitetura de microsserviços,
+                                separa-se o software em pequenos módulos, mas
+                                diferente daquela, nesta há um maior acoplamento
+                                dos módulos através de um Barramento de Serviços,
+                                que faz a comunicação entre os módulos do software.
+                        </li>
+
+                        <br>
+
+                        <li>
+                            Model-View-Controller<br>
+                            &emsp;Utilizada principalmente no desenvolvimento web,
+                            mas não só neste. Utiliza uma separação
+                            entre:<br>
+                            <ul>
+                                <li>Modelo (Model): cuida do dos dados e da lógica do programa;</li>
+                                <li>Visão (View): cuida da interface do usuário;</li>
+                                <li>Controlador (Controller): gerencia a interação entre Modelo e Visão.</li>
+                            </ul>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            Pipes and Filters<br>
+                            &emsp;Assemelha-se a uma linha de produção:
+                            cada filtro (estação) recebe dados e os processa; então
+                            os passa adiante através de um “pipe”
+                            (tubulação, ou similar a uma esteira de uma linha de
+                            produção).
+                            </li>
+
+                        <br>
+
+                        <li>
+                            Orientada a Eventos<br>
+                                &emsp;Os componentes do sistema se comunicam
+                                através de eventos (cliques, triggers, etc). Um
+                                componente produz um evento e outros componentes
+                                vigiando aquele evento reagem a ele.
+                        </li>
+                    </ol>
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
