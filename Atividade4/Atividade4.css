@@ -1,0 +1,17 @@
+body
+{
+	color: white;
+	background-color: rgb(25,25,25);
+}
+
+body
+{
+	display: flex;
+	justify-content: flex-start;
+	margin: 1% 0 0 20%;
+}
+
+.news_item
+{
+	background-color: rgb(75,75,75);
+}
