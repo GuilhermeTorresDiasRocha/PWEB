@@ -8,19 +8,40 @@
         <script src="Atividade15.js"></script>
     </head>
     <body>
-        <section>
-            <form action="onsubmit = return validarDados();">
-                <label for="in_nome">Nome:</label>
-                <br>
-                <div>
-                    <input id="in_nome" type="text">
-                </div>
+        <section class="container">
+            <h2>Formulário Principal</h2>
+            <p>(*) Campo obrigatório</p>
+            <form name="nomeform" onsubmit="return validarDados()">
+                <article class="form-group">
+                    <label for="in_name">Nome:*</label>
+                    <input id="in_name" type="text">
+                </article>
 
-                <label for="in_mail">E-mail:</label>
-                <br>
-                <div>
-                    <input id="in_mail type="text">
-                </div>
+                <article class="form-group">
+                    <label for="in_mail">E-mail:*</label>
+                    <input id="in_mail" type="email">
+                </article>
+
+                <article class="form-group">
+                    <label for="in_comment">Comentário:*</label>
+                    <textarea id="in_comment" rows="4"></textarea>
+                </article>
+
+                <article class="form-group">
+                    <label>Primeira vez visitando a página? (Pesquisa)*</label>
+                    <article class="radio-group">
+                        <label id="lbl_rdbtn_yes" for="in_rdbtn_yes">Sim</label>
+                        <input type="radio" id="in_rdbtn_yes" name="rdbtn" value="yes">
+
+                        <label id="lbl_rdbtn_no" for="in_rdbtn_no">Não</label>
+                        <input type="radio" id="in_rdbtn_no" name="rdbtn" value="no">
+                    </article>
+                </article>
+
+                <article class="btn-group">
+                    <button id="btn-submit" type="submit">Enviar</button>
+                    <button id="btn-clear" type="reset">Limpar</button>
+                </article>
             </form>
         </section>
     </body>
