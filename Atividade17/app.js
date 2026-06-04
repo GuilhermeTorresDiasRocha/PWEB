@@ -1,10 +1,5 @@
-const express = require("express");
-
-const app = express();
-
+const app = require("./app/config/server");
 const texto = require("./modulo1");
-
-app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
 	res.render("home");
