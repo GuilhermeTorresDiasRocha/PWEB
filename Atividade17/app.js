@@ -1,25 +1,21 @@
 const app = require("./app/config/server");
 const texto = require("./modulo1");
 
-app.get("/", (req, res) => {
-	res.render("home");
-});
+//definindo rotas
+const rotaHome = require("./app/routes/home");
+rotaHome(app);
 
-app.get("/formulario-adicionar-usuario", (req, res) => {
-	res.render("admin/adicionar_usuario");
-});
+const rotaAdicionarUsuario = require("./app/routes/adicionar_usuario");
+rotaAdicionarUsuario(app);
 
-app.get("/historia", (req, res) => {
-	res.render("informacao/historia");
-});
+const rotaHistoria = require("./app/routes/historia");
+rotaHistoria(app);
 
-app.get("/cursos", (req, res) => {
-	res.render("informacao/cursos");
-});
+const rotaCursos = require("./app/routes/cursos");
+rotaCursos(app);
 
-app.get("/professores", (req, res) => {
-	res.render("informacao/professores");
-});
+const rotaProfessores = require("./app/routes/professores");
+rotaProfessores(app);
 
 app.listen(3000, () => {
 	console.log("Server started!");
